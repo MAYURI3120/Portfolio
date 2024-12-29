@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuri Kamble - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-container">
+                <img src="{% static 'images/profile.jpg' %}" alt="Profile Picture" class="profile-picture">
+            </div>
+            <img src="{% static 'images/creative-icon.jpg' %}" alt="Creative Icon" class="icon">
+            <p>Creative and driven computer engineering student passionate about innovative solutions.</p>
+        </header>
+
+        <!-- Profile Summary -->
+        <section class="section">
+            <h2>Profile Summary</h2>
+            <p>Creative and driven computer engineering student with a strong foundation in programming and technical skills. Experienced in project presentations and eager to contribute to innovative solutions in technology.</p>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.E. in Computer Engineering</strong>, Bharati Vidyapeeth’s College of Engineering, Pune</li>
+                <li><strong>Diploma in Information Technology</strong>, Government Polytechnic Chh. Sambhajinagar</li>
+            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Research and Machine Learning Intern</strong>, IMD Pune (July 2024 – December 2024)</li>
+                <li><strong>AI & ML Intern</strong>, NIELIT Chh. Sambhajinagar (July 2022 – August 2022)</li>
+            </ul>
+        </section>
+
+        <!-- Mini Projects -->
+        <section class="section">
+            <h2>Mini Projects</h2>
+            <ul>
+                <li><strong>Face Recognition Based Attendance System</strong>: Automated real-time attendance using facial recognition.</li>
+                <li><strong>Gym Management System</strong>: A desktop application for managing gym memberships and attendance.</li>
+                <li><strong>Student Management System</strong>: Simplifies tracking student records and performance.</li>
+                <li><strong>Stock Management System</strong>: Inventory management with automated stock updates.</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><img src="{% static 'images/python-icon.jpg' %}" alt="Python" class="icon">Programming: OOPs, Core Java, Python</li>
+                <li><img src="{% static 'images/html-icon.jpg' %}" alt="HTML" class="icon">Web Design: HTML, CSS, JavaScript</li>
+                <li><img src="{% static 'images/db-icon.jpg' %}" alt="Database" class="icon">Databases: SQL, MySQL, MongoDB</li>
+                <li><img src="{% static 'images/Django-icon.jpg' %}" alt="Django" class="icon">Framework: Django</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Email: mayuri.kamble@gmail.com | Mobile: 91+ 7350509341</p>
+            <p><a href="https://github.com/MAYURI3120">GitHub</a> | <a href="https://www.linkedin.com/in/mayuri-kamble120">LinkedIn</a></p>
+        </section>
+    </div>
+</body>
+</html>
