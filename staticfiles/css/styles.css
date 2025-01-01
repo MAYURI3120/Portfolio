@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f4f4f9, #e4eaf6);
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    position: relative;
+    width: 150px; /* Adjust the size */
+    height: 150px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3)), url('{% static "images/creative-icon.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no spill-over */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+}
+
+.profile-picture {
+    width: 90%; /* Adjust size relative to the container */
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white; /* Optional border */
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.icon {
+    font-size: 35px; /* For font-based icons like FontAwesome */
+    width: 50px;     /* For image-based icons */
+    height: 50px;    /* For image-based icons */
+    margin: 10px;     /* Optional spacing around the icons */
+    color: #333333;
+}
+
+.header-icons .icon {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+}
+
+.footer-icons .icon {
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Ensures the image fits nicely */
+    transition: 0.3s ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2); /* Slightly brightens the image */
+}
+
+.icon:hover {
+    color: #007bff; /* Changes color when hovered over */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    transition: 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+
